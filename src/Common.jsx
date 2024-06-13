@@ -1,5 +1,4 @@
 import React from "react";
-import web from "../src/images/img2.webp";
 import { NavLink } from "react-router-dom";
 
 export default function Common(props) {
@@ -19,7 +18,7 @@ export default function Common(props) {
                     We are the team of talented developer making websites
                   </h2>
                   <div className="mt-3">
-                    <NavLink to="/service">
+                    <NavLink to={props.visit}       >
                       <button type="button" class="btn btn-primary">
                         {props.btname}
                       </button>
